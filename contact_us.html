@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - S B Jain Institute of Technology Management and Research</title>
+    <link rel="icon" type="image/x" href="https://content.presentermedia.com/files/clipart/00003000/3983/phone_button_pc_800_wht.jpg">
+    <!-- styling section -->
+    <style>
+        body {
+            background-color: blanchedalmond;
+            background-image: url(./images/contact_background.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+        /* navbar styling */
+        .nav {
+            width: 100%;
+            height: 8vh;
+            background-color: palegreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 27px;
+            padding: 0 1vw;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            font-family: sans-serif;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav a:hover {
+            color: rgb(254, 96, 96);
+            font-size: 32px;
+        }
+
+        .nav:hover {
+            background-color: lightgreen;
+            box-shadow: 0 0 10px rgb(239, 232, 6);
+        }
+        /* main-box */
+        .main-box {
+            flex: 1;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.295);
+        }
+        /* contact section */
+        .contact-section {
+            margin: 20px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .contact-section:hover {
+            transform: scale(1.05);
+            background-color: rgba(255, 239, 213, 0.8);
+        }
+
+        .contact-title {
+            font-size: 36px;
+            font-family: 'Arial', sans-serif;
+            color: brown;
+            text-align: center;
+        }
+
+        .contact-content {
+            font-size: 22px;
+            font-family: 'Georgia', serif;
+            color: black;
+            text-align: justify;
+            line-height: 1.6;
+        }
+
+        .contact-info,
+        .contact-form {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: rgba(240, 255, 240, 0.8);
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .contact-info:hover,
+        .contact-form:hover {
+            transform: scale(1.05);
+            background-color: rgba(173, 216, 230, 0.8);
+        }
+
+        .section-title {
+            font-size: 28px;
+            font-family: 'Arial', sans-serif;
+            color: darkblue;
+        }
+
+        .section-content {
+            font-size: 22px;
+            font-family: 'Georgia', serif;
+            color: black;
+            text-align: justify;
+            line-height: 1.6;
+        }
+        /* footer */
+        footer {
+            background-color: palegreen;
+            text-align: center;
+            padding: 1rem;
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-group button {
+            padding: 10px 15px;
+            background-color: palegreen;
+            border: none;
+            cursor: pointer;
+        }
+
+        .form-group button:hover {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+ 
+<body>
+    <!-- main division -->
+    <div>
+        <!-- header section -->
+        <header>
+            <div class="nav">
+                <h1>S B JAIN...</h1>
+                <!-- navbar section -->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="speciality.html">Speciality</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- body container -->
+        <div class="main-box">
+            <div class="contact-section">
+                <h1 class="contact-title">Contact Us</h1>
+                <div class="contact-info">
+                    <h2 class="section-title">Contact Information</h2>
+                    <p class="section-content">
+                        Address: S B Jain Institute of Technology Management and Research, Nagpur<br>
+                        Phone: +91-1234567890<br>
+                        Email: info@sbjit.edu.in
+                    </p>
+                </div>
+                <!-- contact form -->
+                <div class="contact-form">
+                    <h2 class="section-title">Send Us a Message</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        &copy; 2024 S B Jain Institute of Technology Management and Research. All rights reserved.
+    </footer>
+</body>
+<!-- javascript code -->
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        let name = document.getElementById('name').value;
+        let email = document.getElementById('email').value;
+        let message = document.getElementById('message').value;
+
+        alert(`Thank you, ${name}! Your message has been received. We will contact you at ${email} soon.`);
+        document.getElementById('contactForm').reset();
+    });
+</script>
+</html>

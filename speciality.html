@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speciality - S B Jain Institute of Technology Management and Research</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: blanchedalmond;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .nav {
+            width: 100%;
+            height: 8vh;
+            background-color: palegreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 27px;
+            padding: 0 1vw;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            font-family: sans-serif;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav a:hover {
+            color: rgb(254, 96, 96);
+            font-size: 32px;
+        }
+
+        .nav:hover {
+            background-color: lightgreen;
+            box-shadow: 0 0 10px rgb(239, 232, 6);
+        }
+
+        .main-box {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            background-color: palegreen;
+            text-align: center;
+            padding: 1rem;
+            font-size: 20px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section -->
+    <header>
+        <div class="nav">
+            <h1>S B JAIN...</h1>
+            <!-- navbar section -->
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="speciality.html">Speciality</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- body container -->
+    <div class="main-box container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.sharda.ac.in/blog/attachments/blog_images/CSE_(1).jpg" class="card-img-top" alt="Computer Science">
+                    <div class="card-body">
+                        <h5 class="card-title">Computer Science</h5>
+                        <p class="card-text">Explore the world of algorithms, data structures, and software development. This branch focuses on computing technologies and programming languages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://newhorizoncollegeofengineering.in/wp-content/uploads/2023/10/Electrical-Engineers-01-1.jpg" class="card-img-top" alt="Electrical Engineering">
+                    <div class="card-body">
+                        <h5 class="card-title">Electrical Engineering</h5>
+                        <p class="card-text">Dive into the study of electrical systems, circuits, and devices. This branch covers power generation, electronics, and telecommunications.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i0.wp.com/manufast.in/wp-content/uploads/2023/05/mechanical-engineering.webp?fit=1280%2C720&ssl=1" class="card-img-top" alt="Mechanical Engineering">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Engineering</h5>
+                        <p class="card-text">Understand the principles of mechanics, kinematics, and energy. This branch involves the design, analysis, and manufacturing of mechanical systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.constructionplacements.com/wp-content/uploads/2023/06/Exploring-the-Diverse-Branches-of-Civil-Engineering-A-Comprehensive-Guide.jpg.webp" class="card-img-top" alt="Civil Engineering">
+                    <div class="card-body">
+                        <h5 class="card-title">Civil Engineering</h5>
+                        <p class="card-text">Learn about the design and construction of infrastructure projects such as bridges, roads, and buildings. This branch deals with structural engineering and urban planning.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.thinkiit.in/wp-content/uploads/2022/08/A-Beginners-Guide-to-a-Career-in-Chemical-Engineering.webp" class="card-img-top" alt="Chemical Engineering">
+                    <div class="card-body">
+                        <h5 class="card-title">Chemical Engineering</h5>
+                        <p class="card-text">Explore chemical processes and production methods. This branch involves the transformation of raw materials into valuable products through chemical reactions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://www.rathinamcollege.edu.in/wp-content/uploads/2023/06/Wiring-the-Digital-Era-Discovering-B.E-Electronics-and-Communication-Engineering-min.jpg" class="card-img-top" alt="Electronics Engineering">
+                    <div class="card-body">
+                        <h5 class="card-title">Electronics Engineering</h5>
+                        <p class="card-text">Focus on electronic circuits, devices, and communication systems. This branch covers microelectronics, signal processing, and embedded systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        &copy; 2024 S B Jain Institute of Technology Management and Research. All rights reserved.
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

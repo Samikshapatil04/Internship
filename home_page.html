@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S B Jain</title>
+    <!-- styling section -->
+    <style>
+        /* background image styling */
+        body {
+            background-color: blanchedalmond;
+            background-image: url(./images/front.webp);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* navbar styling */
+        .nav {
+            width: 96vw;
+            height: 8vh;
+            background-color: palegreen;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 27px;
+            padding: 0 1vw;
+        }
+
+        .nav-list {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1rem;
+            font-family: sans-serif;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav a:hover {
+            color: rgb(254, 96, 96);
+            font-size: 32px;
+        }
+
+        .nav:hover {
+            background-color: lightgreen;
+            box-shadow: 0 0 10px rgb(239, 232, 6);
+        }
+        /* main container styling */
+        .main-box {
+            width: 98vw;
+            height: 90vh;
+            background-color: rgba(255, 255, 255, 0.295);
+            padding: 20px;
+        }
+
+        .text-two {
+            font-size: 65px;
+        }
+        /* button styling */
+        .button {
+            width: 24vw;
+            height: 9vh;
+            background-color: rgba(9, 222, 23, 0.727);
+            font-size: 28px;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: black;
+            border: none;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: lawngreen;
+        }
+        /* division boxes styling */
+        .container {
+            height: 55vh;
+            width: 20vw;
+            border-style: solid;
+            color: rgb(7, 6, 6);
+            margin-top: 10px;
+            margin-left: 80px;
+            display: block;
+            float: left;
+            padding-left: 10px;
+            background-color: #BFEA7C;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .container:hover {
+            transform: scale(1.1);
+            background-color: #FDFFAB;
+            box-shadow: 0 0 10px rgb(239, 232, 6);
+        }
+
+        .division {
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<!-- javascript code -->
+<script>
+    function admissionEnquiry() {
+        let name = prompt("Enter your name:");
+        let email = prompt("Enter your email:");
+        let phone = prompt("Enter your phone number:");
+        let course = prompt("Enter the course you are interested in:");
+
+        if (name && email && phone && course) {
+            alert(`Thank you for your enquiry, ${name}!\nWe will contact you at ${email} or ${phone} regarding ${course}.`);
+        } else {
+            alert("Please provide all the details.");
+        }
+    }
+</script>
+
+<body>
+    <!-- main division -->
+    <div>
+        <!-- header section -->
+        <header>
+            <div class="nav">
+                <h1>S B JAIN...</h1>
+                <!-- navbar section -->
+                <nav>
+                    <ul class="nav-list">
+                        <li><a href="home_page.html">Home</a></li>
+                        <li><a href="speciality.html">Speciality</a></li>
+                        <li><a href="about_us.html">About Us</a></li>
+                        <li><a href="contact_us.html">Contact Us</a></li>
+                        <li><a href="login.html">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- body container -->
+        <div class="main-box">
+            <h1 class="text-two"><b><i>Education Redefined...</i></b></h1>
+            <button class="button" onclick="admissionEnquiry()">ADMISSION ENQUIRY</button>
+            </br></br>
+            <!--First division-->
+            <div class="container">
+                <img src="./images/img_one.png" height="100vh" width="100vw"
+                    style=" margin-right: 10px; align-items: center;">
+                <h2><span style="color:brown; font-size: 30px;">ADMISSION</span></h2>
+                <p draggable="true" class="division">
+                <ul style="font-size: 24px;">
+                    <li>Program</li>
+                    <li>Course Intake</li>
+                    <li>Scholarships</li>
+                    <li>Fees & Bank Details</li>
+                    <li>Helpline</li>
+                    <li>FAQ’s</li>
+                    <li>Brochure</li>
+                </ul>
+            </div>
+            <!--Second division-->
+            <div class="container">
+                <img src="./images/img_three.webp" height="100vh" width="100vw"
+                    style=" margin-right: 10px; align-items: center;">
+                <h2><span style="color:brown; font-size: 30px;">PROGRAMS</span></h2>
+                <p draggable="true" class="division">
+                <ul style="font-size: 24px;">
+                    <li>First Year Engineering</li>
+                    <li>Computer Science & Engineering</li>
+                    <li>AIML/AIDS</li>
+                    <li>Electronics & Telecomm.</li>
+                    <li>Mechanical Engineering</li>
+                    <li>Electrical Engineering</li>
+                </ul>
+            </div>
+            <!--Third division-->
+            <div class="container">
+                <img src="./images/img_four.jpg" height="100vh" width="100vw"
+                    style=" margin-right: 10px; align-items: center;">
+                <h2><span style="color:brown; font-size: 30px;">EVENTS</span></h2>
+                <p draggable="true" class="division">
+                <ul style="font-size: 24px;">
+                    <li>ICASTM</li>
+                    <li>NEP Compliant Institute From 2023-24 Onwards</li>
+                    <li>Garbotsav Event</li>
+                    <li>Invitation of Alumni Meet</li>
+                    <li>Technotsav 2024</li>
+                </ul>
+            </div></br>
+        </div>
+        <!-- footer -->
+        <div style="height: 6vh; width: 97; background-color: rgb(128, 128, 128); font-size: 24px; text-align: center;">
+            <footer>
+                <p> &copy; 2024 S B Jain Institute of Technology Management and Research. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
